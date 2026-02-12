@@ -147,7 +147,7 @@ pip install -r requirements.txt
 ⚠️ **The Scania APS dataset is NOT included** in this repository due to size constraints.
 
 **Download Instructions:**
-1. Visit [UCI ML Repository - APS Failure Dataset](https://archive.ics.uci.edu/dataset/421/aps+failure+at+scania+trucks)
+1. Visit https://researchdata.se/sv/catalogue/dataset/2024-34/2
 2. Download all CSV files (train/validation/test sets)
 3. Place in `data/raw/` directory
 
