@@ -252,16 +252,15 @@ MIT License - See [LICENSE](LICENSE) file for details
 
 ## 🙏 Acknowledgments
 
-- **Scania CV AB** for providing the APS failure dataset
+- **Scania CV AB** for providing failure dataset
 - **University of Hertfordshire** for computational resources
 - **Supervisor** for guidance and feedback
 
 ## 📬 Contact
 
 For questions about this research:
-- **Author**: [Your Name]
-- **Email**: [Your Email]
-- **LinkedIn**: [Your LinkedIn]
+- **Author**: Muhammad Atir
+- **Email**: attir69@gmail.com
 - **Institution**: University of Hertfordshire
 
 ---
