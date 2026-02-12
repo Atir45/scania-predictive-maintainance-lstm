@@ -1,0 +1,13 @@
+Metric,"Hancock et al. (2023)
+Medicare Fraud","Our Study (2026)
+Scania APS"
+Dataset Domain,Healthcare Billing,Mechanical Failures
+Classification Task,Fraudulent vs Legitimate,Class 4 vs All Others
+Total Samples,"~100,000+","28,596"
+Minority Class %,~0.1-1%,8.21%
+Imbalance Ratio,~100:1 to 1000:1,11.2:1
+Number of Features,"Mixed (billing codes, amounts)",106 (sensor readings)
+Best AUPRC Score,~85-95% (estimated)*,32.55%
+Best Scenario,RUS→FS (Scenario 4),RUS→FS (Scenario 4)
+Improvement over Random,Very High,4× over baseline
+Practical Difficulty,Moderate (patterns exist),High (noisy sensors)

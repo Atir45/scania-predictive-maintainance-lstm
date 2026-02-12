@@ -1,0 +1,37 @@
+{
+  "experiment_name": "multiclass_Very_Aggressive",
+  "model_type": "multiclass_tree",
+  "timestamp": "2026-02-01T20:16:55.409817",
+  "config": {
+    "class_weight": {
+      "0": 1.0,
+      "1": 15.0,
+      "2": 18.0,
+      "3": 20.0,
+      "4": 25.0
+    },
+    "max_depth": 10,
+    "min_samples_split": 50,
+    "min_samples_leaf": 10,
+    "features_selected": 100
+  },
+  "metrics": {
+    "precision": 0.019992310649750097,
+    "recall": 0.6842105263157895,
+    "f1": 0.03884945834889802,
+    "tp": "52",
+    "total": "76",
+    "predicted": "2601",
+    "accuracy": 0.47265160523186683,
+    "train_time": 30.149373054504395
+  },
+  "predictions_summary": {
+    "total_predictions": 5046,
+    "class_distribution": {
+      "4": 2601,
+      "0": 2386,
+      "3": 36,
+      "2": 23
+    }
+  }
+}

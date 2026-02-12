@@ -1,0 +1,103 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/
+
+# Data files (too large for GitHub)
+data/raw/*.csv
+data/processed/*.csv
+data/features/*.csv
+*.h5
+*.hdf5
+
+# Model files (too large)
+models/*.pkl
+models/*.pt
+models/*.pth
+models/*.h5
+*.joblib
+*.sav
+
+# Large result files
+results/figures/*.png
+results/figures/*.jpg
+results/figures/*.jpeg
+results/figures/*.svg
+results/reports/*.pdf
+
+# Keep one example result
+!results/figures/lstm_architecture_comparison.png
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Environment variables
+.env
+.env.local
+*.env
+
+# PyTorch checkpoints
+*.ckpt
+checkpoints/
+
+# Logs
+*.log
+logs/
+*.out
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# PDF papers (optional - keep if you want to share references)
+*.pdf
+
+# PowerShell scripts (keep the useful ones)
+# Uncomment to exclude:
+# *.ps1

@@ -1,0 +1,32 @@
+{
+  "experiment_name": "multiclass_Baseline_Balanced",
+  "model_type": "multiclass_tree",
+  "timestamp": "2026-01-18T22:31:01.621740",
+  "config": {
+    "class_weight": "balanced",
+    "max_depth": 10,
+    "min_samples_split": 50,
+    "min_samples_leaf": 10,
+    "features_selected": 100
+  },
+  "metrics": {
+    "precision": 0.02301635372501514,
+    "recall": 0.5,
+    "f1": 0.04400694846554719,
+    "tp": "38",
+    "total": "76",
+    "predicted": "1651",
+    "accuracy": 0.3265953230281411,
+    "train_time": 33.92803740501404
+  },
+  "predictions_summary": {
+    "total_predictions": 5046,
+    "class_distribution": {
+      "4": 1651,
+      "0": 1625,
+      "3": 1083,
+      "2": 444,
+      "1": 243
+    }
+  }
+}

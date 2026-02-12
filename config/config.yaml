@@ -1,0 +1,78 @@
+# Configuration for Scania Predictive Maintenance
+
+# Data paths
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  features_dir: "data/features"
+
+# Preprocessing settings
+preprocessing:
+  missing_strategy: "median"  # Options: mean, median, forward_fill
+  scaling_method: "standard"  # Options: standard, robust, minmax, none
+  outlier_threshold: 3.0
+  aggregation_functions:
+    - mean
+    - std
+    - min
+    - max
+
+# Feature engineering
+feature_engineering:
+  window_sizes: [5, 10, 20]
+  max_interactions: 50
+  n_features_to_select: 200
+  selection_method: "mutual_info"  # Options: mutual_info, f_classif
+
+# Model settings
+models:
+  random_forest:
+    n_estimators: 200
+    max_depth: 15
+    min_samples_split: 10
+    min_samples_leaf: 2
+    class_weight: "balanced"
+    random_state: 42
+    n_jobs: -1
+  
+  xgboost:
+    n_estimators: 200
+    max_depth: 6
+    learning_rate: 0.1
+    subsample: 0.8
+    colsample_bytree: 0.8
+    random_state: 42
+    n_jobs: -1
+
+# Evaluation settings
+evaluation:
+  cost_fp: 10      # Cost of false positive (unnecessary maintenance)
+  cost_fn: 500     # Cost of false negative (missed failure)
+  cost_maintenance: 100  # Cost of planned maintenance
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - roc_auc
+    - pr_auc
+
+# Hyperparameter tuning
+tuning:
+  method: "random_search"  # Options: grid_search, random_search
+  n_iter: 20
+  cv_folds: 3
+  scoring: "f1"
+
+# Output settings
+output:
+  models_dir: "models"
+  results_dir: "results"
+  figures_dir: "results/figures"
+  metrics_dir: "results/metrics"
+  reports_dir: "results/reports"
+
+# Logging
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

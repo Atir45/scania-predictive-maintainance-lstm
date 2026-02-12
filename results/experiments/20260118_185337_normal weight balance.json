@@ -1,0 +1,56 @@
+{
+    "timestamp": "20260118_185337",
+    "experiment_name": "normal weight balance",
+    "notes": " Normal class weight penalty",
+    "hyperparameters": {
+        "max_depth": 10,
+        "min_samples_split": 50,
+        "min_samples_leaf": 10,
+        "class_weight": "balanced"
+    },
+    "class_weights": {
+        "0": 0.55,
+        "1": 5.18
+    },
+    "custom_tree": {
+        "train_accuracy": 0.67,
+        "val_accuracy": 0.63,
+        "val_precision": 0.04,
+        "val_recall": 0.61,
+        "val_f1": 0.08,
+        "training_time": 38.93,
+        "confusion_matrix": {
+            "TP": 83,
+            "FP": 1830,
+            "TN": 3080,
+            "FN": 53
+        }
+    },
+    "sklearn_baseline": {
+        "train_accuracy": 0.62,
+        "val_accuracy": 0.56,
+        "val_precision": 0.04,
+        "val_recall": 0.59,
+        "val_f1": 0.07,
+        "training_time": 2.31,
+        "confusion_matrix": {
+            "TP": 80,
+            "FP": 2160,
+            "TN": 2750,
+            "FN": 56
+        }
+    },
+    "dataset_info": {
+        "n_train_samples": 23550,
+        "n_val_samples": 5046,
+        "n_features": 100,
+        "train_class_dist": {
+            "healthy": 21278,
+            "failed": 2272
+        },
+        "val_class_dist": {
+            "healthy": 4910,
+            "failed": 136
+        }
+    }
+}

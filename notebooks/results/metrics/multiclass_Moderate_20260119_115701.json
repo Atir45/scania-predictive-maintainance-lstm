@@ -1,0 +1,37 @@
+{
+  "experiment_name": "multiclass_Moderate",
+  "model_type": "multiclass_tree",
+  "timestamp": "2026-01-19T11:57:01.407254",
+  "config": {
+    "class_weight": {
+      "0": 1.0,
+      "1": 8.0,
+      "2": 10.0,
+      "3": 12.0,
+      "4": 15.0
+    },
+    "max_depth": 10,
+    "min_samples_split": 50,
+    "min_samples_leaf": 10,
+    "features_selected": 100
+  },
+  "metrics": {
+    "precision": 0.01882845188284519,
+    "recall": 0.5921052631578947,
+    "f1": 0.0364963503649635,
+    "tp": "45",
+    "total": "76",
+    "predicted": "2390",
+    "accuracy": 0.5069361870788743,
+    "train_time": 31.06857466697693
+  },
+  "predictions_summary": {
+    "total_predictions": 5046,
+    "class_distribution": {
+      "0": 2567,
+      "4": 2390,
+      "2": 56,
+      "3": 33
+    }
+  }
+}
